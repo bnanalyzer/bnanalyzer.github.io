@@ -1,0 +1,41 @@
+body > iframe {
+  width: 50%;
+  height: 375px;
+}
+
+body {
+  min-width: 735px;
+}
+
+.r {
+  margin: auto;
+  vertical-align: center;
+  text-align: center;
+  display: table;
+  width: 80%;
+}
+
+.proj {
+  padding: 5px;
+  display: table-cell;
+  vertical-align: top;
+  width: 20%;
+  transition: .2s ease;
+}
+
+.proj:hover {
+  height: 25%;
+  width: 25%;
+}
+
+.pt {
+  background-color: #8BC34A;
+  height: 50px;
+  font-size: 2rem;
+}
+
+img {
+  border: 1px solid black;
+  max-width: 100%;
+  max-height: 100%;
+}

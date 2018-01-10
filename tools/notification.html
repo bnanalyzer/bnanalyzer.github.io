@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+	<title>Bitcoin Network Analyzer | Notifications</title>
+	<link rel="stylesheet" type="text/css" href="../resources/all.css">
+	<link rel="stylesheet" type="text/css" href="../resources/notification.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script src="../scripts/navticker.js"></script>
+	<script src="../scripts/notification.js"></script>
+</head>
+
+<nav class="navbar navbar-toggleable-sm navbar-fixed-top">
+	<a href="../index.html"><img class="navbar-brand logo" src="../resources/logo.png">
+	<p class="navbar-brand name">Bitcoin Network Analyzer</p></a>
+	<p class="navbar-brand hidden-xs navbar-right name" id="tickerUSD"></p>
+	<p class="navbar-brand hidden-xs navbar-right name" id="tickerCAD"></p>
+</nav>
+
+<body>
+	<p style="margin-left: 50px; font-size: 2rem; border-bottom: 2px solid black; width: 4rem; margin-bottom: 5px">Log</p>
+	<div class="log">
+	</div>
+	<div id="boxes">
+	    <div class="input" id="1">
+	        <input class="address" id="address" placeholder="address here" type="text">
+	        <div class="status" id="button">
+	        	<p id="status">disconnected</p>
+	        	<p class="click">click to connect</p>
+	        </div>
+	    </div>
+	</div>
+    <div class="addmore">
+    	<i class="fa fa-plus" aria-hidden="true"></i>
+    </div>
+</body>
+</html>

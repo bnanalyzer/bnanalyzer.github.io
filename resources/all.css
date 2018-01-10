@@ -1,0 +1,44 @@
+body {
+  padding: 5em;
+  font-family: Arial;
+  text-align: center;
+}
+
+nav {
+  font-weight: 300;
+  color: white;
+  background-color: #689F38;
+  box-shadow: 0 5px 0 #E64A19;
+  padding-right: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.logo {
+  padding: 0 2px;
+  height: 100%;
+  width: auto;
+}
+
+.name {
+  color: white;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.lg {
+  font-size: 2.5em;
+}
+
+.sm {
+  font-size: 1.5em;
+}
+

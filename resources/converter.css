@@ -1,0 +1,96 @@
+body {
+    background-color: #DCEDC8;
+    min-width: 550px;
+    padding: 10em;
+    text-align: center;
+    margin: 0;
+}
+
+body > div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mid {
+    line-height: 3rem;
+    font-size: 5em;
+    margin: 25px;
+    padding: 5px;
+}
+
+.button {
+    font-size: 1.4em;
+}
+
+.selected {
+    line-height: 3em;
+    background-color: #fff;
+    padding: 0 1.3rem;
+    border: 1px solid #DAE1E9;
+    border-radius: 0 4px 4px 0;
+}
+
+.default:hover {
+    background-color: #f9f9f9;
+}
+
+.list {
+    text-align: center;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #DAE1E9;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    padding: 0;
+}
+
+.currencies {
+    padding: 0;
+    width: 20rem;
+    font-size: 0;
+}
+
+#base, #quote {
+    display: none;
+}
+
+.currency {
+    display: inline-block;
+    font-size: 1.8rem;
+    width: 10rem;
+    padding: 1.4rem;
+    border-bottom: 1px solid #dae1e9;
+    transition: .2s ease;
+}
+
+.currency:hover {
+    background-color: #f9f9f9;
+}
+
+.input {
+    font-size: 2.8rem;
+    position: relative;
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #DAE1E9;
+    border-radius: 4px 0px 0px 4px;
+    transition: 0.25s ease;
+    vertical-align: top;
+}
+
+.amt {
+    display: block;
+    width: 10em;
+    padding: 0.6em;
+    height: 7rem;
+    border: none;
+    font-size: 2.8rem;
+    color: #4E5C6E;
+}
+
+@media screen and (max-width: 1072px) {
+    body > .mid {
+        display: none;
+    }
+}

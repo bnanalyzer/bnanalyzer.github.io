@@ -1,0 +1,42 @@
+body {
+    min-width: 934px;
+}
+.settings {
+    font-size: 2.2rem;
+    text-align: center;
+    width: 100%;
+}
+.settings > div {
+    padding: 20px;
+    display: inline-block;
+}
+
+.settings > input {
+    margin: 0 auto;
+    display: block;
+}
+
+.info {
+    display: inline;
+}
+.info > div > * {
+    font-size: 2rem;
+    display: inline-block;
+}
+
+#ex1Slider .slider-selection {
+	background: #689F38;
+}
+
+.in {
+    display: inline-block;
+    border: none;
+    text-align: left;
+    width: 160px;
+    margin: 0;
+    display: inline-block;
+}
+
+.input {
+    color: grey;
+}
