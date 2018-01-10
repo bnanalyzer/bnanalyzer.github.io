@@ -1,19 +1,11 @@
-  ____ _______ _____   _   _      _                      _     
- |  _ \__   __/ ____| | \ | |    | |                    | |    
- | |_) | | | | |      |  \| | ___| |___      _____  _ __| | __ 
- |  _ <  | | | |      | . ` |/ _ \ __\ \ /\ / / _ \| '__| |/ / 
- | |_) | | | | |____  | |\  |  __/ |_ \ V  V / (_) | |  |   <  
- |____/  |_|  \_____| |_| \_|\___|\__| \_/\_/ \___/|_|  |_|\_\ 
-      /\               | |                                     
-     /  \   _ __   __ _| |_   _ _______ _ __                   
-    / /\ \ | '_ \ / _` | | | | |_  / _ \ '__|                  
-   / ____ \| | | | (_| | | |_| |/ /  __/ |                     
-  /_/    \_\_| |_|\__,_|_|\__, /___\___|_|                     
-                           __/ |                               
-                          |___/                                
+# Bitcoin Network Analyzer
 
-This project contains various tools and information related to Bitcoin.
+This website contains various tools and information for and about the Bitcoin network
 
-## Support & Documentation
+## Getting Started
 
-To be completed.
+Navigation is as simple as using any other website. Explanations and helpful tooltips to enhance your knowledge of Bitcoin are included!
+
+## Authors
+* Steven Tran
+
