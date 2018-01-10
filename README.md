@@ -1,4 +1,4 @@
-# Bitcoin Network Analyzer
+# [Bitcoin Network Analyzer](https://bnanalyzer.github.io)
 
 This website contains various tools and information for and about the Bitcoin network
 
