@@ -1,39 +1,32 @@
 body {
-    padding: 75px 0 !important;
+    min-width: 768px;
+    padding: 75px 100px !important;
 }
 
 .input {
-    padding: 0 !important;
-    width: 10em;
-    margin: 5px auto;
+    border: 1px solid #DAE1E9;
+    border-radius: 0 14px 14px 0;
+    margin: 15px auto;
     font-size: 2.8rem;
     display: table;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #DAE1E9;
-    transition: 0.25s ease;
     vertical-align: middle;
 }
 
 .address {
     display: table-cell;
     vertical-align: middle;
-    width: 10em;
-    padding: 0 5px;
+    width: 12em;
+    padding: 5px;
     height: 3em;
     border: none;
-    color: #4E5C6E;
 }
 
 .status {
     margin: 0 !important;
     color: red;
+    background-color: white;
     border-left: 1px solid #DAE1E9;
     display: table-cell;
-}
-
-#status {
-    width: 7em !important;
 }
 
 .click {
@@ -45,18 +38,16 @@ body {
 
 .addmore {
     font-size: 2rem;
-    margin: 10px auto;
-    width: 50px;
-    height: 50px;
+    margin: 10px auto 0px auto;
 }
 
 .log {
     height: 150px;
-    overflow: auto;;
-    margin: 0 50px;
+    overflow: auto;
+    margin-bottom: 30px;
     text-align: left;
 }
+
 .log p {
-    padding: 0;
     margin: 0;
 }
