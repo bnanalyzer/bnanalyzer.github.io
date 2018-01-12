@@ -1,4 +1,4 @@
-body > iframe {
+iframe {
   width: 50%;
   height: 375px;
 }
@@ -8,11 +8,12 @@ body {
 }
 
 .r {
+  height: 275px;
   margin: auto;
   vertical-align: center;
   text-align: center;
   display: table;
-  width: 80%;
+  width: 100%;
 }
 
 .proj {
@@ -38,4 +39,23 @@ img {
   border: 1px solid black;
   max-width: 100%;
   max-height: 100%;
+}
+
+.about {
+  text-align: left !important;
+}
+
+citations {
+  width: 100px;
+  border-top: 50px solid black;
+}
+
+.citations > p {
+  font-size: 10px;
+}
+
+.quote {
+  margin-bottom: 16px;
+  text-align: center;
+  font-size: 2rem;
 }
