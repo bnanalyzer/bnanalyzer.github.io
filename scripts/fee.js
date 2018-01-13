@@ -34,7 +34,7 @@ function popSlider() {
     $("#ex1").attr("data-slider-max", fees[fees.length - 1][2]);
     var reasonableFee;
     var ctr = 0;
-    while (fees[ctr][1] >= 1200) {
+    while (fees[ctr][1] >= 1000) {
         ctr += 1;
     }
     reasonableFee = fees[ctr][2];
