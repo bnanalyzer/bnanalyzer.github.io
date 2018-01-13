@@ -8,7 +8,7 @@ nav {
   font-weight: 300;
   color: white;
   background-color: #689F38;
-  box-shadow: 0 5px 0 #E64A19;
+  box-shadow: 0 5px 0 #8BC34A;
   padding-right: 10px;
 }
 
@@ -42,3 +42,27 @@ a:hover {
   font-size: 1.5em;
 }
 
+.marquee {
+  position: absolute;
+  visibility: hidden;
+  overflow: hidden;
+  background-color: #8BC34A;
+  height: 24px;
+  width: 100%;
+  vertical-align: middle;
+  left: 0;
+  top: 50px;
+  padding: 0;
+  opacity: 0;
+}
+
+.js-marquee > p {
+  color: white;
+  margin: auto 10px;
+}
+
+nav:hover + .marquee {
+  transition: opacity 0.2s linear;
+  visibility: visible;
+  opacity: 1;
+}

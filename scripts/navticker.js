@@ -15,4 +15,12 @@ function updateTicker() {
 $(document).ready(function() {
     updateTicker();
     setInterval(updateTicker, 30000);
+    
+    $('.marquee').marquee({
+        duration: 15000,
+        gap: 50,
+        delayBeforeStart: 0,
+        direction: 'right',
+        duplicated: false
+    });
 });
