@@ -13,12 +13,12 @@
 	<script src="scripts/navticker.js"></script>
 </head>
 
-<nav class="navbar navbar-toggleable-sm navbar-fixed-top">
+<nav class="navbar navbar-toggleable-lg navbar-fixed-top">
 	<a href="index.html"><img class="navbar-brand logo" src="resources/logo.png">
 	<p class="navbar-brand name">Bitcoin Network Analyzer</p></a>
-	<p class="navbar-brand hidden-xs navbar-right name" id="tickerUSD"></p>
-	<p class="navbar-brand hidden-xs navbar-right name" id="tickerCAD"></p>
-	<p class="navbar-brand hidden-xs navbar-right name" id="mktCapCAD"></p>
+	<p class="navbar-brand hidden-xs navbar-right name" id="tickerUSD" title="You can buy 1 BTC with this many USD."></p>
+	<p class="navbar-brand hidden-xs navbar-right name" id="tickerCAD" title="You can buy 1 BTC with this many CAD."></p>
+	<p class="navbar-brand hidden-xs hidden-sm hidden-md navbar-right name" id="mktCapCAD" title="This figure represents total value of all Bitcoins in circulation."></p>
 </nav>
 <div class="marquee">
 	<p>Block Height: <span id="bh"></span></p>
@@ -42,15 +42,15 @@
 	<!--<p class="sm" style="margin-top: 25px">Tools</p>-->
 	<div class="r">
 		<div class="proj">
-		    <div class="pt">Cryptocurrency Converter</div>
+		    <div class="pt" title="This tool converts between various crypto- and fiat currencies.">Cryptocurrency Converter</div>
 		    <a href="tools/converter.html"><img src="resources/tools/converter.png"></a>
 		</div>
 		<div class="proj">
-		    <div class="pt">Bitcoin Address Notifier</div>
+		    <div class="pt" title="This tool provides an auditory notification for various events.">Bitcoin Address Notifier</div>
 		    <a href="tools/notification.html"><img src="resources/tools/notification.png"></a>
 		</div>
 		<div class="proj">
-		    <div class="pt">Fee Calculator</div>
+		    <div class="pt" title="This tool can be used to predict an ideal transaction fee or analyze a transaction's fees.">Fee Calculator</div>
 		    <a href="tools/fee.html"><img src="resources/tools/transactionfee.png"></a>
 		</div>
 	</div>

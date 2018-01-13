@@ -16,9 +16,9 @@
 <nav class="navbar navbar-toggleable-sm navbar-fixed-top">
 	<a href="../index.html"><img class="navbar-brand logo" src="../resources/logo.png">
 	<p class="navbar-brand name">Bitcoin Network Analyzer</p></a>
-	<p class="navbar-brand hidden-xs navbar-right name" id="tickerUSD"></p>
-	<p class="navbar-brand hidden-xs navbar-right name" id="tickerCAD"></p>
-	<p class="navbar-brand hidden-xs navbar-right name" id="mktCapCAD"></p>
+	<p class="navbar-brand hidden-xs navbar-right name" id="tickerUSD" title="You can buy 1 BTC with this many USD."></p>
+	<p class="navbar-brand hidden-xs navbar-right name" id="tickerCAD" title="You can buy 1 BTC with this many CAD."></p>
+	<p class="navbar-brand hidden-xs hidden-sm hidden-md navbar-right name" id="mktCapCAD" title="This figure represents total value of all Bitcoins in circulation."></p>
 </nav>
 <div class="marquee">
 	<p>Block Height: <span id="bh"></span></p>
@@ -34,7 +34,7 @@
 </div>
 
 <body>
-	<p style="font-size: 4rem; border-bottom: 4px solid black; width: 8rem;">Log</p>
+	<p style="font-size: 3rem; border-bottom: 4px solid black; width: 6rem;" title="Logged information will appear below.">Log</p>
 	<div class="log well">
 	</div>
 	<div class="well">

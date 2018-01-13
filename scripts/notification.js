@@ -40,7 +40,7 @@ $(document).ready(function() {
     initSocket();
     $(".addmore").on("click", function() {
         addresses.push(0);
-        $("#boxes").append('<div class="input" id="' + (addresses.length) + '"><input class="address" id="address" placeholder="address here" type="text"><div class="status" id="button"><p id="status">disconnected</p><p class="click">click to connect</p></div></div>')
+        $("#boxes").append('<div class="input" id="' + (addresses.length) + '"><input class="address" id="address" placeholder="address here" type="text" title="A valid Bitcoin address should go here."><div class="status" id="button"><p id="status">disconnected</p><p class="click">click to connect</p></div></div>')
     });
 
     $("#boxes").on("click", "#button", function() {

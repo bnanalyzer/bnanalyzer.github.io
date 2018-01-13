@@ -14,9 +14,9 @@
 <nav class="navbar navbar-fixed-top">
 	<a href="../index.html"><img class="navbar-brand logo" src="../resources/logo.png">
 	<p class="navbar-brand name">Bitcoin Network Analyzer</p></a>
-	<p class="navbar-brand hidden-xs navbar-right name" id="tickerUSD"></p>
-	<p class="navbar-brand hidden-xs navbar-right name" id="tickerCAD"></p>
-	<p class="navbar-brand hidden-xs navbar-right name" id="mktCapCAD"></p>
+	<p class="navbar-brand hidden-xs navbar-right name" id="tickerUSD" title="You can buy 1 BTC with this many USD."></p>
+	<p class="navbar-brand hidden-xs navbar-right name" id="tickerCAD" title="You can buy 1 BTC with this many CAD."></p>
+	<p class="navbar-brand hidden-xs hidden-sm hidden-md navbar-right name" id="mktCapCAD" title="This figure represents total value of all Bitcoins in circulation."></p>
 </nav>
 <div class="marquee">
 	<p>Block Height: <span id="bh"></span></p>
@@ -33,10 +33,10 @@
 
 <body>
 	<div>
-		<div class="input">
+		<div class="input" title="Any quantity of a cryptocurrency can go here.">
 			<input class="amt" id="coinValue" value="1" type="text">
 		</div>
-		<div class="button">
+		<div class="button" title="Various coins can be selected from.">
 			<div class="selected" id="selectedCoin"><span></span>
 				<i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
 			</div>
@@ -52,10 +52,10 @@
 <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 	</div>
 	<div>
-		<div class="input">
+		<div class="input" title="Any quantity of a fiat currency can go here.">
 			<input class="amt" id="fiatValue" value="…" type="text">
 		</div>
-		<div class="button">
+		<div class="button" title="Various fiat currencies can be selected from.">
 			<div class="selected" id="selectedFiat"><span>USD</span>
 				<i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
 			</div>
