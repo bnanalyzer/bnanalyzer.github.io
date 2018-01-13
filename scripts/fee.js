@@ -38,7 +38,6 @@ function popSlider() {
         ctr += 1;
     }
     reasonableFee = fees[ctr][2];
-    console.log(reasonableFee);
     $("#ex1").attr("data-slider-value", reasonableFee);
 }
 

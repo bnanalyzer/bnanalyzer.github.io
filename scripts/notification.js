@@ -8,7 +8,7 @@ function initSocket() {
     };
     socket.onopen = function() {
         $(".log").append('<p class="success">Success! Connection established.');
-        socket.send(JSON.stringify({ "op": "blocks_sub" }));
+        socket.send(JSON.stringify({"op": "blocks_sub"}));
     };
 
     socket.onmessage = function(m) {

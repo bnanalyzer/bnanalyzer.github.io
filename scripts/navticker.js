@@ -1,26 +1,46 @@
-var apiurl = "https://min-api.cryptocompare.com/data/pricemulti?fsyms=" + "BTC" + "&tsyms=" + "USD,CAD";
+var priceapi = "https://min-api.cryptocompare.com/data/pricemulti?fsyms=" + "BTC" + "&tsyms=" + "USD,CAD";
+var infoapi = "https://api.blocktrail.com/v1/btc/block/latest?api_key=fb1f9e84fc6aa688cfa8b45e22cc0b203e338ad8";
 
 function updateTicker() {
+    var BTCCAD;
     $.ajax({
         type: "GET",
-        url: apiurl,
+        url: priceapi,
         dataType: "json",
         success: function(res) {
+            BTCCAD = res.BTC.CAD;
             $("#tickerUSD").text("BTC/USD: " + res.BTC.USD);
             $("#tickerCAD").text("BTC/CAD: " + res.BTC.CAD);
+        }
+    });
+    $.ajax({
+        async: false,
+        type: "GET",
+        url: infoapi,
+        dataType: "json",
+        success: function(res) {
+            $("#bh").html(res.height);
+            $("#lbt").html(res.block_time);
+            $("#lbn").html(res.nonce);
+            $("#lbd").html(res.difficulty);
+            $("#pool").html(res.miningpool_name);
+            $("#tm").html(res.transactions);
+            $("#tv").html("$" + ((res.value) * 10e-9 * BTCCAD).toFixed(2));
+            $("#avgval").html("$" + (((res.value) * 10e-9 * BTCCAD) / res.transactions).toFixed(2));
+            $("#avgsize").html(Math.round(res.byte_size / res.transactions) + "B");
         }
     });
 }
 
 $(document).ready(function() {
-    updateTicker();
-    setInterval(updateTicker, 30000);
-    
-    $('.marquee').marquee({
-        duration: 15000,
-        gap: 50,
-        delayBeforeStart: 0,
-        direction: 'right',
-        duplicated: false
+    $.when(updateTicker()).then(function() {
+        $('.marquee').marquee({
+            duration: 15000,
+            delayBeforeStart: 0,
+            direction: 'right',
+            duplicated: true
+        });
     });
+    
+    setInterval(updateTicker, 30000);
 });
