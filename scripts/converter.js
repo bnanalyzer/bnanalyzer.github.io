@@ -1,4 +1,5 @@
-var url = "https://api.coinmarketcap.com/v1/ticker/?limit=20&convert=CAD";
+var lim = 30;
+var url = "https://api.coinmarketcap.com/v1/ticker/?limit=" + lim + "&convert=CAD";
 var data = getData();
 setInterval(getData, 15000);
 
@@ -10,7 +11,7 @@ function getData() {
         url: url,
         dataType: "json",
         success: function(res) {
-            for (var i = 0; i < 20; i++) {
+            for (var i = 0; i < lim; i++) {
                 temp.push([res[i].symbol, [res[i].price_usd, res[i].price_cad]]);
             }
         }
