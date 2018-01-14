@@ -40,7 +40,7 @@
 <body>
 	<p class="lg">Bitcoin Transaction Fee Calculator</p>
 	<div class="well">
-		<div class="info">
+		<div class="info" title="An amount of BTC within the specified range should be paid to have a transaction confirmed within the given length of time.">
 			<div>
 				<p>You should pay a fee of: &nbsp;</p><span id="fee"></span><p>.</p>
 			</div>
@@ -71,8 +71,66 @@
 			<input class="in" placeholder="transaction id" type="text" id="txid">
 		</div>
 		<div>
-			<p class="result"></p>
+			<p class="result" title="An analysis of the fee paid for this transaction."></p>
 		</div>
+	</div>
+	<div class="well about">
+		<p class="sm">About transaction fees</p>
+		<p>Bitcoin transactions can only be validated if, according to the blockchain, they are in accordance with the rest of the network. However, Bitcoin blocks have a hard limit - 1 MB - on how large they can be. Approximately 4000 standard-sized transactions can fit into this space.</p>
+		<p>For this reason, there is a great demand for space in the current block. One transaction among tens or hundreds of thousands of other transactions are competing to be included in the block. For this reason, transaction fees are paid to miners as an incentive to mine certain transactions.</p>
+		<p>Bottlenecks an inevitable consequence of any coin with a blockchain, resulting in a fee market and congestion.</p>
+		<p class="sm">Are there any solutions?</p>
+		<p>Discussion on scaling Bitcoin has been ongoing for years. Below are some options:</p>
+		<ol>
+			<li>Increasing the block size limit</li>
+			<ul>
+				<li>Pros:</li>
+				<ul>
+					<li>More transactions can fit into each block, allowing more transactions to be cleared from the queue of pending transactions (memory pool) approximately every 10 minutes</li>
+				</ul>
+				<li>Cons:</li>
+				<ul>
+					<li>More resources - bandwidth, disk space, processing power - are required to keep up with the increased throughput, centralizing the network as fewer entities are involved</li>
+				</ul>
+			</ul>
+			<li>Segwit (segregated witness); transaction optimization</li>
+			<ul>
+				<li>Pros:</li>
+				<ul>
+					<li>Doubles the effective block size through a soft fork (backward and forward compatible)</li>
+					<li>Fixes covert ASICBoost, an exploit providing the unfair advantage that some miners have over others</li>
+					<li>Fixes transaction malleability, which enables many second-layer scaling options</li>
+				</ul>
+				<li>Cons:</li>
+				<ul>
+					<li>As an opt-in upgrade, segwit must be used for its benefits to be evident</li>
+					<p>Fixes covert ASICBoost</p>
+				</ul>
+			</ul>
+			<li>Schnorr signatures; transaction optimization</li>
+			<ul>
+				<li>Pros:</li>
+				<ul>
+					<li>Reduces the size of signature data in transactions by allowing multiple inputs to be spent with one signature</li>
+					<li>Multiple inputs can be spent covertly</li>
+				</ul>
+			</ul>
+			<li>Lightning Network</li>
+			<ul>
+				<li>Pros:</li>
+				<ul>
+					<li>Only two on-chain transactions are required for an unlimited number of LN transactions; one to open a channel and one to close it</li>
+					<li>Virtually instant transactions, enabling greater-than-VisaNet levels of transaction throughput</li>
+					<li>With its pathfinding algorithm, users can pay any other user in the network with a direct channel open</li>
+				</ul>
+				<li>Cons:</li>
+				<ul>
+					<li>BTC must be "locked up" in a channel to use LN</li>
+					<li>The centralization of payment hubs may occur</li>
+				</ul>
+			</ul>
+		</ol>
+		<p>The debate is very political, resulting in the divergence of the Bitcoin network. Bitcoin Cash was forked from the Core network at <a href="https://blockchain.info/block/00000000000000000019f112ec0a9982926f1258cdcc558dd7c3b7e5dc7fa148">Block #478559</a> with a change to 8MB blocks. Bitcoin Core remains the original chain, with segwit activated and solutions #3 and #4 being worked on.</p>
 	</div>
 </body>
 </html>

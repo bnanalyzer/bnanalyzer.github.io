@@ -5,6 +5,7 @@ body {
 }
 
 nav {
+  min-width: 308px;
   font-weight: 300;
   color: white;
   background-color: #689F38;
@@ -70,4 +71,22 @@ nav:hover + .marquee {
   transition: opacity 0.2s linear;
   visibility: visible;
   opacity: 1;
+}
+
+.about {
+  text-align: left !important;
+}
+
+.about > p > span {
+  margin: 0px;
+}
+
+citations {
+  width: 100px;
+  border-top: 50px solid black;
+}
+
+.citations > p {
+  margin: 0;
+  font-size: 10px;
 }

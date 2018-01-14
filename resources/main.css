@@ -41,19 +41,6 @@ img {
   max-height: 100%;
 }
 
-.about {
-  text-align: left !important;
-}
-
-citations {
-  width: 100px;
-  border-top: 50px solid black;
-}
-
-.citations > p {
-  font-size: 10px;
-}
-
 .quote {
   margin-bottom: 16px;
   text-align: center;
