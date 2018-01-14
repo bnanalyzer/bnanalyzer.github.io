@@ -61,6 +61,7 @@ $(document).ready(function() {
             duration: 15000,
             delayBeforeStart: 0,
             direction: 'right',
+            pauseOnHover: true,
             duplicated: true
         });
     });

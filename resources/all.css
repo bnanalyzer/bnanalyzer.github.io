@@ -44,6 +44,7 @@ a:hover {
 }
 
 .marquee {
+  z-index: 10000;
   position: absolute;
   visibility: hidden;
   overflow: hidden;
@@ -52,7 +53,7 @@ a:hover {
   width: 100%;
   vertical-align: middle;
   left: 0;
-  top: 56px;
+  top: 51px;
   padding: 0;
   opacity: 0;
 }
@@ -69,6 +70,11 @@ a:hover {
 
 nav:hover + .marquee {
   transition: opacity 0.2s linear;
+  visibility: visible;
+  opacity: 1;
+}
+
+.marquee:hover {
   visibility: visible;
   opacity: 1;
 }

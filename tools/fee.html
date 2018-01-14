@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="../resources/bootstrap-slider.css">
 	<link rel="stylesheet" type="text/css" href="../resources/fontawesome/css/font-awesome.css">
 	<script src="../scripts/jquery-3.2.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.5.0/jquery.marquee.js"></script>
+	<script src="../scripts/jquery.marquee.js"></script>
 	<script src="../scripts/bootstrap.min.js"></script>
 	<script src="../scripts/bootstrap-slider.js"></script>	
 	<script src="../scripts/navticker.js"></script>
@@ -76,13 +76,13 @@
 	</div>
 	<div class="well about">
 		<p class="sm">About transaction fees</p>
-		<p>Bitcoin transactions can only be validated if, according to the blockchain, they are in accordance with the rest of the network. However, Bitcoin blocks have a hard limit - 1 MB - on how large they can be. Approximately 4000 standard-sized transactions can fit into this space.</p>
+		<p>Bitcoin transactions can only be validated if, according to the blockchain, they are in accordance with the rest of the network. However, Bitcoin blocks have a hard limit - 1 MB - on how large they can be. Approximately 4000 standard-sized transactions can fit into this space. [1]</p>
 		<p>For this reason, there is a great demand for space in the current block. One transaction among tens or hundreds of thousands of other transactions are competing to be included in the block. For this reason, transaction fees are paid to miners as an incentive to mine certain transactions.</p>
 		<p>Bottlenecks an inevitable consequence of any coin with a blockchain, resulting in a fee market and congestion.</p>
 		<p class="sm">Are there any solutions?</p>
 		<p>Discussion on scaling Bitcoin has been ongoing for years. Below are some options:</p>
 		<ol>
-			<li>Increasing the block size limit</li>
+			<li>Increasing the block size limit [1]</li>
 			<ul>
 				<li>Pros:</li>
 				<ul>
@@ -93,7 +93,7 @@
 					<li>More resources - bandwidth, disk space, processing power - are required to keep up with the increased throughput, centralizing the network as fewer entities are involved</li>
 				</ul>
 			</ul>
-			<li>Segwit (segregated witness); transaction optimization</li>
+			<li>Segwit (segregated witness); transaction optimization [1]</li>
 			<ul>
 				<li>Pros:</li>
 				<ul>
@@ -107,7 +107,7 @@
 					<p>Fixes covert ASICBoost</p>
 				</ul>
 			</ul>
-			<li>Schnorr signatures; transaction optimization</li>
+			<li>Schnorr signatures; transaction optimization [2]</li>
 			<ul>
 				<li>Pros:</li>
 				<ul>
@@ -115,7 +115,7 @@
 					<li>Multiple inputs can be spent covertly</li>
 				</ul>
 			</ul>
-			<li>Lightning Network</li>
+			<li>Lightning Network [1][3]</li>
 			<ul>
 				<li>Pros:</li>
 				<ul>
@@ -130,7 +130,12 @@
 				</ul>
 			</ul>
 		</ol>
-		<p>The debate is very political, resulting in the divergence of the Bitcoin network. Bitcoin Cash was forked from the Core network at <a href="https://blockchain.info/block/00000000000000000019f112ec0a9982926f1258cdcc558dd7c3b7e5dc7fa148">Block #478559</a> with a change to 8MB blocks. Bitcoin Core remains the original chain, with segwit activated and solutions #3 and #4 being worked on.</p>
+		<p>The debate is very political, resulting in the divergence of the Bitcoin network. Bitcoin Cash was forked from the Core network at <a href="https://blockchain.info/block/00000000000000000019f112ec0a9982926f1258cdcc558dd7c3b7e5dc7fa148">Block #478559</a> with a change to 8MB blocks [1]. Bitcoin Core remains the original chain, with segwit activated and solutions #3 and #4 being worked on.</p>
+	<div class="citations">
+		<p>[1] <a href="https://en.wikipedia.org/wiki/Bitcoin_scalability_problem">https://en.wikipedia.org/wiki/Bitcoin_scalability_problem</a></p>
+		<p>[2] <a href="https://bitcoincore.org/en/2017/03/23/schnorr-signature-aggregation/">https://bitcoincore.org/en/2017/03/23/schnorr-signature-aggregation/</a></p>
+		<p>[3] <a href="https://lightning.network/">https://lightning.network/</a></p>
+	</div>
 	</div>
 </body>
 </html>
